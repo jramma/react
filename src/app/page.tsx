@@ -2,6 +2,7 @@
 
 import { MyButton } from "@/app/components/btn";
 import { useState } from "react";
+import Game from "./components/game";
 export default function Home() {
   const [count, setCount] = useState(0);
 
@@ -10,10 +11,11 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex flex-col gap-10 items-center justify-center flex-grow">
+    <div className="flex flex-col min-h-screen items-center  ">
+      <main className="flex flex-col  gap-10 items-center justify-center flex-grow">
         <MyButton count={count} onClick={handleClick} />
         <MyButton count={count} onClick={handleClick} />
+        <Game />
       </main>
     </div>
   );
