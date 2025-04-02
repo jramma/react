@@ -1,4 +1,4 @@
-import Board from "@/app/sections/board";
+import Board from "@/app/components/board";
 import { useState } from "react";
 
 export default function Game() {
@@ -60,7 +60,7 @@ export default function Game() {
         <p className="text-2xl">Jugadas: {currentMove}</p>
         <div>
           <button
-            className="mb-4 border px-4 py-2 rounded hover:bg-gray-200"
+            className="mb-4 border-2 px-4 py-2 rounded bg-white/20"
             onClick={() => setIsAscending(!isAscending)}
           >
             Ordenar {isAscending ? "descendente" : "ascendente"}

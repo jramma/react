@@ -27,4 +27,5 @@ body {
 
 button{
   cursor: pointer;
+  @apply border-1 bg-white/20 rounded-md px-4 py-1;
 }
